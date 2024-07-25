@@ -14,8 +14,7 @@ public class ExampleTwohashMap {
 
 		System.out.println("Size of original Map is: " + newHashMap.size());
 
-		HashMap<String, String> copyHashMap = new HashMap<>();
-		copyHashMap.putAll(newHashMap);
+		HashMap<String, String> copyHashMap = new HashMap<>(newHashMap);
 		System.out.println("copyHashMap mappings= " + copyHashMap);
 
 		String nullKeyValue = copyHashMap.remove(null);
